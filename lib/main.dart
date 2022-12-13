@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         title: 'Material App',
         initialRoute: AppRoutes.initialRoute,
         //home: const ListView2Screen(),
-        routes: AppRoutes.routes,
+        routes: AppRoutes.getAppRoutes(),
         //rutas dinamicas
         onGenerateRoute: AppRoutes.onGenerateRoute);
   }
