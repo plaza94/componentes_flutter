@@ -20,13 +20,16 @@ class ListView1Screen extends StatelessWidget {
       ),
       body: ListView(children: [
         //operador espread ?
+        /*escribir una lista en un ListView*/
 
         ...options
             .map((game) => ListTile(
                   title: Text(game),
-                  trailing: Icon(Icons.arrow_forward),
+                  trailing: const Icon(Icons.arrow_forward),
                 ))
-            .toList()
+            .toList(),
+
+        const Divider(),
         //leading: Icon(Icons.accessible_rounded),
         //map.values.forEach((v) => print("Value: $v"))
         /* children: const [
