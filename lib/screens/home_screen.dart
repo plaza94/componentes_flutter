@@ -1,5 +1,7 @@
-import 'package:fl_components/router/app_routes.dart';
 import 'package:flutter/material.dart';
+
+import '../theme/app_theme.dart';
+import 'package:fl_components/router/app_routes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,7 +20,9 @@ class HomeScreen extends StatelessWidget {
                 title: Text(menuOptions[i].name),
                 leading: Icon(
                   menuOptions[i].icon,
-                  //color: Colors.pink,
+                  color: AppTheme.primary,
+                  //otra alternativa para extraer el color primario del tema es:
+                  //Theme.of(context).primaryColor
                 ),
                 onTap: () {
                   /*final route = MaterialPageRoute(
