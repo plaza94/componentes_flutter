@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
                 title: Text(menuOptions[i].name),
                 leading: Icon(
                   menuOptions[i].icon,
-                  color: Colors.pink,
+                  //color: Colors.pink,
                 ),
                 onTap: () {
                   /*final route = MaterialPageRoute(
