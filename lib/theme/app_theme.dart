@@ -10,6 +10,8 @@ class AppTheme {
 
       //appbar theme
       appBarTheme: const AppBarTheme(color: primary, elevation: 0),
+      textButtonTheme:
+          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)),
       scaffoldBackgroundColor: Colors.black);
 
   static final ThemeData lightTheme = ThemeData.light().copyWith(
